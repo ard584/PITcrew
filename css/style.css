@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eaf4fb;
+    color: #2f2f2f;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #59664c;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Page Layout */
+
+.page-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin: 0 0 20px;
+    color: #59664c;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #59664c;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #59664c;
+}
+
+/* Home Page */
+
+.main-logo {
+    display: block;
+    width: 230px;
+    margin: 0 auto 30px;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 22px 26px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Team */
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.team-member {
+    width: 30%;
+    text-align: center;
+}
+
+.photo-frame {
+    width: 190px;
+    height: 220px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Mentor */
+
+.mentor {
+    text-align: center;
+}
+
+.mentor h3 {
+    margin-top: 10px;
+}
+
+/* Sponsors */
+
+.sponsors {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sponsor {
+    width: 30%;
+    text-align: center;
+}
+
+.sponsor img {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.sponsor h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sponsor p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Other Pages */
+
+section {
+    margin-bottom: 50px;
+}

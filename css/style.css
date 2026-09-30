@@ -6,58 +6,68 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
-
 nav {
     background-color: #59664c;
     text-align: center;
-    padding: 14px 10px;
+    padding: 14px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 18px;
-    font-size: 17px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     text-decoration: underline;
 }
 
 nav a.active {
     font-weight: bold;
-    text-decoration: underline;
 }
 
-/* Page Layout */
-
 .page-content {
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 950px;
+    margin: auto;
     padding: 40px 25px;
 }
 
-h1 {
+.team-page .page-content {
+    max-width: 1200px;
+}
+
+.schedule-page .page-content {
+    max-width: 1000px;
+}
+
+h1,
+h2 {
     text-align: center;
-    font-size: 48px;
-    margin: 0 0 20px;
     color: #59664c;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0 0 30px;
 }
 
 h2 {
-    text-align: center;
     font-size: 30px;
-    color: #59664c;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin: 0 0 20px;
 }
 
-h3 {
+h3,
+h4 {
     color: #59664c;
 }
 
-/* Home Page */
+.box {
+    background-color: rgba(255, 255, 255, 0.55);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
 
 .main-logo {
     display: block;
@@ -65,110 +75,54 @@ h3 {
     margin: 0 auto 30px;
 }
 
-.intro {
-    background-color: rgba(255, 255, 255, 0.55);
-    padding: 22px 26px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-/* Home Team Section */
-
-.team {
+.team,
+.sponsors,
+.team-details {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
 }
 
-.team-member {
-    width: 30%;
+.team-member,
+.sponsor,
+.team-card {
+    flex: 1;
     text-align: center;
 }
 
 .photo-frame {
-    width: 190px;
     height: 220px;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .photo-frame img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    max-width: 190px;
+    max-height: 220px;
     border-radius: 10px;
 }
 
 .team-member h3 {
-    margin-top: 10px;
-    margin-bottom: 0;
+    margin: 8px 0 0;
 }
 
-/* Mentor */
-
-.mentor {
-    text-align: center;
-}
-
-.mentor h3 {
-    margin-top: 10px;
-}
-
-/* Sponsors */
-
-.sponsors {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.sponsor {
-    width: 30%;
-    text-align: center;
+.mentor-label {
+    display: block;
+    margin-top: 2px;
+    color: #2f2f2f;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 .sponsor img {
     width: 120px;
     height: 100px;
     object-fit: contain;
-    margin-bottom: 10px;
 }
 
-.sponsor h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.sponsor p {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
-/* Team Details Page */
-
-.team-page .page-content {
-    max-width: 1200px;
-}
-
-.team-page h1 {
-    margin-bottom: 35px;
-}
-
-.team-details {
-    display: flex;
-    justify-content: space-between;
-    gap: 28px;
-    align-items: stretch;
-}
-
-.team-card {
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.55);
-    padding: 25px 30px;
-    border-radius: 10px;
+.team-intro {
+    max-width: 750px;
+    margin: 0 auto 35px;
     text-align: center;
 }
 
@@ -181,98 +135,92 @@ h3 {
 
 .team-card h2 {
     font-size: 24px;
-    margin-top: 12px;
-    margin-bottom: 18px;
+    margin: 10px 0;
 }
 
 .team-card h3 {
     font-size: 17px;
-    margin-top: 20px;
     margin-bottom: 5px;
 }
 
 .team-card p {
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 5px;
-    margin-bottom: 18px;
-}
-
-/* Project Page */
-
-.page-content section {
-    margin-bottom: 55px;
-}
-
-.page-content section > h3 {
-    font-size: 21px;
-    margin-top: 35px;
-    margin-bottom: 10px;
-}
-
-.page-content section > p {
-    margin-top: 0;
-    margin-bottom: 18px;
 }
 
 .project-figure {
     max-width: 500px;
-    margin: 25px auto 40px;
+    margin: 25px auto;
     text-align: center;
 }
 
 .project-figure img {
     display: block;
-    width: auto;
-    height: auto;
     max-width: 100%;
     max-height: 320px;
-    margin: 0 auto;
-    object-fit: contain;
-    border-radius: 6px;
+    margin: auto;
 }
 
 .project-figure figcaption {
     margin-top: 8px;
     font-size: 13px;
-    line-height: 1.4;
     color: #555555;
 }
 
-/* Smaller Screens */
+.schedule-intro {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.current-status h2 {
+    font-size: 22px;
+}
+
+.schedule-month {
+    margin-bottom: 25px;
+}
+
+.month-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    border-bottom: 2px solid #c3ad78;
+}
+
+.month-heading h2 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.month-heading h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+main a {
+    color: #59664c;
+}
 
 @media (max-width: 750px) {
+    .team,
+    .sponsors,
+    .team-details {
+        display: block;
+    }
+
+    .team-member,
+    .sponsor,
+    .team-card {
+        margin-bottom: 30px;
+    }
+
     nav a {
         display: inline-block;
         margin: 5px 10px;
     }
 
-    .team {
+    .month-heading {
         display: block;
-    }
-
-    .team-member {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-
-    .team-details {
-        display: block;
-    }
-
-    .team-card {
-        margin-bottom: 25px;
-    }
-
-    .sponsors {
-        display: block;
-    }
-
-    .sponsor {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-
-    .project-figure {
-        max-width: 90%;
     }
 }

@@ -37,10 +37,6 @@ nav a.active {
     max-width: 1200px;
 }
 
-.schedule-page .page-content {
-    max-width: 1000px;
-}
-
 h1,
 h2 {
     text-align: center;
@@ -49,12 +45,11 @@ h2 {
 
 h1 {
     font-size: 48px;
-    margin: 0 0 30px;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 30px;
-    margin: 0 0 20px;
 }
 
 h3,
@@ -102,13 +97,8 @@ h4 {
     border-radius: 10px;
 }
 
-.team-member h3 {
-    margin: 8px 0 0;
-}
-
 .mentor-label {
     display: block;
-    margin-top: 2px;
     color: #2f2f2f;
     font-size: 15px;
     font-weight: normal;
@@ -120,32 +110,16 @@ h4 {
     object-fit: contain;
 }
 
-.team-intro {
-    max-width: 750px;
-    margin: 0 auto 35px;
+.team-intro,
+.schedule-intro {
     text-align: center;
+    margin: 0 auto 35px;
 }
 
 .team-card img {
     width: 120px;
     height: 145px;
     object-fit: contain;
-    border-radius: 8px;
-}
-
-.team-card h2 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.team-card h3 {
-    font-size: 17px;
-    margin-bottom: 5px;
-}
-
-.team-card p {
-    font-size: 14px;
-    margin-top: 5px;
 }
 
 .project-figure {
@@ -155,46 +129,24 @@ h4 {
 }
 
 .project-figure img {
-    display: block;
     max-width: 100%;
     max-height: 320px;
-    margin: auto;
 }
 
 .project-figure figcaption {
-    margin-top: 8px;
     font-size: 13px;
     color: #555555;
 }
 
-.schedule-intro {
-    max-width: 700px;
-    margin: 0 auto 35px;
-    text-align: center;
-}
-
-.current-status h2 {
-    font-size: 22px;
-}
-
-.schedule-month {
-    margin-bottom: 25px;
-}
-
 .month-heading {
     display: flex;
-    align-items: baseline;
     gap: 18px;
+    align-items: baseline;
     border-bottom: 2px solid #c3ad78;
 }
 
-.month-heading h2 {
-    font-size: 26px;
-    margin: 0;
-}
-
+.month-heading h2,
 .month-heading h3 {
-    font-size: 18px;
     margin: 0;
 }
 
@@ -205,22 +157,13 @@ main a {
 @media (max-width: 750px) {
     .team,
     .sponsors,
-    .team-details {
+    .team-details,
+    .month-heading {
         display: block;
-    }
-
-    .team-member,
-    .sponsor,
-    .team-card {
-        margin-bottom: 30px;
     }
 
     nav a {
         display: inline-block;
         margin: 5px 10px;
-    }
-
-    .month-heading {
-        display: block;
     }
 }

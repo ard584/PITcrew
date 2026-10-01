@@ -7,9 +7,12 @@
 
     <body>
         <nav>
-            <a href="index.html">Home</a>
+            <div class = "topLogo">
+                <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo"></a>
+                <span>PIT Crew</span>
+            </div>
             <a href="team.html">Team</a>
-            <a class="active" href="project.html">Project</a>
+            <a href="project.html">Project</a>
             <a href="development.html">Development</a>
             <a href="schedule.html">Schedule</a>
             <a href="documents.html">Documents</a>
@@ -19,24 +22,27 @@
             <h1>Project</h1>
 
             <section>
-                <h2>Project Description</h2>
+                <h2>Description</h2>
 
                 <h3>Fish Monitoring in the Grand Canyon</h3>
 
-                <p>
-                    The Arizona Game and Fish Department, U.S. Geological Survey, and U.S. Fish and Wildlife Service
-                    conduct and support fish monitoring throughout the Colorado River and Grand Canyon. Fish populations
-                    can provide important information about changes in the river and help guide conservation efforts.
-                    Biologists record data from roughly 150,000–200,000 fish each year, including species, size,
-                    location, and population information. Many fish are also given PIT tags, which provide each tagged
-                    fish with a unique 13-digit ID that can be scanned if the fish is captured again.
-                </p>
+                <section class="box">
 
-                <p>
-                    For Arizona Game and Fish, monitoring includes 82 sites along the river, with the river divided into
-                    250-meter sections. Information collected during field trips is eventually added to a larger
-                    database where it can be shared and used for continued monitoring and research.
-                </p>
+                    <p>
+                        The Arizona Game and Fish Department, U.S. Geological Survey, and U.S. Fish and Wildlife Service
+                        conduct and support fish monitoring throughout the Colorado River and Grand Canyon. Fish populations
+                        can provide important information about changes in the river and help guide conservation efforts.
+                        Biologists record data from roughly 150,000–200,000 fish each year, including species, size,
+                        location, and population information. Many fish are also given PIT tags, which provide each tagged
+                        fish with a unique 13-digit ID that can be scanned if the fish is captured again.
+                    </p>
+
+                    <p>
+                        For Arizona Game and Fish, monitoring includes 82 sites along the river, with the river divided into
+                        250-meter sections. Information collected during field trips is eventually added to a larger
+                        database where it can be shared and used for continued monitoring and research.
+                    </p>
+                </section>
 
                 <figure class="project-figure">
                     <img
@@ -49,19 +55,22 @@
 
                 <h3>The Current Problem</h3>
 
-                <p>
-                    Field crews currently use a program called Shoals to record sampling and fish data. Shoals was
-                    developed more than a decade ago in Visual Basic, and the original developer has been retired for
-                    several years. The program has not received regular updates or improvements, leaving biologists
-                    dependent on an aging system for an important part of their field work.
-                </p>
 
-                <p>
-                    A replacement is especially important because field data entry is a major part of the fish
-                    monitoring workflow. Biologists need to scan tags, enter measurements, review previous records, and
-                    back up their data while working in the field. Because Shoals is no longer actively maintained,
-                    there is major concern that it will become increasingly outdated and less dependable over time.
-                </p>
+                <section class="box">
+                    <p>
+                        Field crews currently use a program called Shoals to record sampling and fish data. Shoals was
+                        developed more than a decade ago in Visual Basic, and the original developer has been retired for
+                        several years. The program has not received regular updates or improvements, leaving biologists
+                        dependent on an aging system for an important part of their field work.
+                    </p>
+
+                    <p>
+                        A replacement is especially important because field data entry is a major part of the fish
+                        monitoring workflow. Biologists need to scan tags, enter measurements, review previous records, and
+                        back up their data while working in the field. Because Shoals is no longer actively maintained,
+                        there is major concern that it will become increasingly outdated and less dependable over time.
+                    </p>
+                </section>
 
                 <figure class="project-figure">
                     <img src="images/project/shoals.png" alt="Shoals specimen data entry screen" />
@@ -73,21 +82,23 @@
 
                 <h3>CRAB CAKES</h3>
 
-                <p>
-                    CRAB CAKES, or the Colorado River Area Biologists Computer-Aided Knowledge Entry System, is the
-                    desktop application being developed to replace Shoals. Development began with a previous NAU
-                    Capstone team, SharkBytes, which created the first version of the new system and completed several
-                    important parts of the application. However, the program is not yet reliable enough for regular
-                    field use.
-                </p>
+                <section class="box">
+                    <p>
+                        CRAB CAKES, or the Colorado River Area Biologists Computer-Aided Knowledge Entry System, is the
+                        desktop application being developed to replace Shoals. Development began with a previous NAU
+                        Capstone team, SharkBytes, which created the first version of the new system and completed several
+                        important parts of the application. However, the program is not yet reliable enough for regular
+                        field use.
+                    </p>
 
-                <p>
-                    PIT Crew is continuing that work by focusing on the parts of the program that still need
-                    improvement. These include making Bluetooth connections with PIT-tag scanners more reliable,
-                    improving the interface, and adding access to information about previously tagged fish. The project
-                    also includes adding simple graphs and summaries for QA/QC in the field and expanding compatibility
-                    to Linux so the program can be used on a wider range of computers.
-                </p>
+                    <p>
+                        PIT Crew is continuing that work by focusing on the parts of the program that still need
+                        improvement. These include making Bluetooth connections with PIT-tag scanners more reliable,
+                        improving the interface, and adding access to information about previously tagged fish. The project
+                        also includes adding simple graphs and summaries for QA/QC in the field and expanding compatibility
+                        to Linux so the program can be used on a wider range of computers.
+                    </p>
+                </section>
 
                 <figure class="project-figure">
                     <img src="images/project/crab_cakes_v1.png" alt="Previous CRAB CAKES specimen entry screen" />
@@ -100,38 +111,52 @@
 
                 <h3>Why It Matters</h3>
 
-                <p>
-                    Fish monitoring is about more than keeping records. Changes in fish populations can help show what
-                    is happening in the Colorado River and provide information that supports conservation efforts. This
-                    is especially important for species like the humpback chub, which is threatened by habitat changes
-                    and invasive species.
-                </p>
+                <section class="box">
+                    <p>
+                        Fish monitoring is about more than keeping records. Changes in fish populations can help show what
+                        is happening in the Colorado River and provide information that supports conservation efforts. This
+                        is especially important for species like the humpback chub, which is threatened by habitat changes
+                        and invasive species.
+                    </p>
 
-                <p>
-                    With data being collected from roughly 150,000–200,000 fish each year, even small problems with data
-                    entry can add up quickly. CRAB CAKES will help crews catch unusual values, review information about
-                    previously tagged fish, and check their data while they are still in the field. A reliable
-                    replacement for Shoals would make fish survey data easier to collect and review while giving
-                    biologists a system that can continue to be updated as their work and equipment change.
-                </p>
+                    <p>
+                        With data being collected from roughly 150,000–200,000 fish each year, even small problems with data
+                        entry can add up quickly. CRAB CAKES will help crews catch unusual values, review information about
+                        previously tagged fish, and check their data while they are still in the field. A reliable
+                        replacement for Shoals would make fish survey data easier to collect and review while giving
+                        biologists a system that can continue to be updated as their work and equipment change.
+                    </p>
 
-                <p>
-                    The program also needs to be practical for field crews with different levels of technical
-                    experience. Tasks like connecting a scanner, entering fish information, reviewing records, and
-                    backing up data should be easy to use without requiring programming knowledge.
-                </p>
+                    <p>
+                        The program also needs to be practical for field crews with different levels of technical
+                        experience. Tasks like connecting a scanner, entering fish information, reviewing records, and
+                        backing up data should be easy to use without requiring programming knowledge.
+                    </p>
+                </section>
+
             </section>
 
             <section>
                 <h2>High-Level Requirements</h2>
 
-                <!-- High-Level Requirements content info goes here -->
+                <section class="box">
+                    <p>
+                        Major requirements for this application includes but is not limited to; fixing bluetooth scanner connectivity, improving the pre-existing programs GUI, adding support for Linux systems, adding graphs to visualize fish data and trends, and making the fish records more user-friendly.
+                    </p>
+                </section>
+
             </section>
 
             <section>
                 <h2>Envisioned Solution</h2>
 
-                <!-- Envisioned Solution content info goes here -->
+                <section class="box">
+                    <p>
+                        Despite there being a pre-existing application for our clients to use, our goal is to make it more user-friendly for them as well as ensure its ease of use. As of right now, the biggest issues arise from the application appearance as well as its lack of response to the bluetooth pit devices that are necessary on-field. 
+                        (To be continued as project progresses…)
+                    </p>
+                </section>
+
             </section>
         </main>
     </body>

@@ -1,15 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #eaf4fb;
+    background-color: #1e1e2b;
     color: #2f2f2f;
     line-height: 1.6;
 }
 
 nav {
-    background-color: #59664c;
-    text-align: center;
-    padding: 14px;
+    background-color: #303045;
+    /*text-align: right;*/
+    display:flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    padding: 5px;
 }
 
 nav a {
@@ -28,9 +31,10 @@ nav a.active {
 }
 
 .page-content {
-    max-width: 950px;
+    max-width: 1200px;
     margin: auto;
     padding: 40px 25px;
+    color: white;
 }
 
 .team-page .page-content {
@@ -40,7 +44,7 @@ nav a.active {
 h1,
 h2 {
     text-align: center;
-    color: #59664c;
+    color: white;
 }
 
 h1 {
@@ -54,11 +58,63 @@ h2 {
 
 h3,
 h4 {
-    color: #59664c;
+    color: #dae0e8;
+}
+
+.topLogo img{
+    height: 100px;
+}
+
+.topLogo {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+    color: white;
+}
+
+.pitHeader {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/coloradoHeader.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.pitHeaderInfo {
+    max-width: 1400px;
+    color: #beb8c2;
+    text-align: left;
+}
+
+.pitHeaderInfo h1 {
+    text-align: left;
+    color: #edebeb;
+    font-size: 150px;
+    line-height: 110px;
+    margin-bottom: 10px;
+}
+
+.pitHeaderInfo p {
+    text-align: left;
+    max-width: 850px;
+    font-size: 20px;
+}
+
+.photoCredit {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    margin: 10px;
+    font-size: 12px;
+    color: #969199;
 }
 
 .box {
-    background-color: rgba(255, 255, 255, 0.55);
+    background-color: #45545e;
     padding: 25px;
     border-radius: 10px;
     margin-bottom: 35px;
@@ -71,8 +127,7 @@ h4 {
 }
 
 .team,
-.sponsors,
-.team-details {
+.sponsors {
     display: flex;
     gap: 30px;
 }
@@ -104,9 +159,16 @@ h4 {
     font-weight: normal;
 }
 
+.lead-label {
+    display: block;
+    color: #2f2f2f;
+    font-size: 15px;
+    font-weight: normal;
+}
+
 .sponsor img {
-    width: 120px;
-    height: 100px;
+    width: 250px;
+    height: 220px;
     object-fit: contain;
 }
 
@@ -114,6 +176,15 @@ h4 {
 .schedule-intro {
     text-align: center;
     margin: 0 auto 35px;
+}
+
+.team-intro h1 {
+    font-size: 80px;
+}
+
+.team-intro p {
+    font-size: 20px;
+    color: white;
 }
 
 .team-card img {
@@ -145,6 +216,51 @@ h4 {
     border-bottom: 2px solid #c3ad78;
 }
 
+.team-details {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 10%;
+}
+
+.team-details:nth-of-type(even) {
+    flex-direction: row-reverse;
+    background-color: #45545e;
+}
+
+.memberCard {
+    flex: 1;
+}
+
+.team-details img {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.memberCard h2 {
+    text-align: left;
+    color: #white;
+    font-size: 32px;
+    margin: 0 0 15px;
+}
+
+.memberCard h3 {
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 4px;
+}
+
+.memberCard p {
+    margin: 0 0 18px;
+    color: #d3cedb;
+}
+
 .month-heading h2,
 .month-heading h3 {
     margin: 0;
@@ -157,7 +273,6 @@ main a {
 @media (max-width: 750px) {
     .team,
     .sponsors,
-    .team-details,
     .month-heading {
         display: block;
     }

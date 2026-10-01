@@ -8,7 +8,7 @@ body {
 
 nav {
     background-color: #303045;
-    display:flex;
+    display: flex;
     align-items: center;
     padding: 5px;
 }
@@ -59,7 +59,7 @@ h4 {
     color: #dae0e8;
 }
 
-.topLogo img{
+.topLogo img {
     height: 100px;
 }
 
@@ -73,6 +73,7 @@ h4 {
 }
 
 .pitHeader {
+    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/coloradoHeader.png");
     background-size: cover;
     background-position: center;
@@ -241,7 +242,7 @@ h4 {
 
 .memberCard h2 {
     text-align: left;
-    color: #white;
+    color: white;
     font-size: 32px;
     margin: 0 0 15px;
 }
@@ -265,7 +266,7 @@ h4 {
 }
 
 main a {
-    color: #59664c;
+    color: rgb(144, 172, 117);
 }
 
 @media (max-width: 750px) {

@@ -7,8 +7,11 @@
 
     <body class="team-page">
         <nav>
-            <a href="index.html">Home</a>
-            <a class="active" href="team.html">Team</a>
+            <div class = "topLogo">
+                <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo"></a>
+                <span>PIT Crew</span>
+            </div>
+            <a href="team.html">Team</a>
             <a href="project.html">Project</a>
             <a href="development.html">Development</a>
             <a href="schedule.html">Schedule</a>
@@ -16,41 +19,46 @@
         </nav>
 
         <main class="page-content">
-            <h1>Meet PIT Crew</h1>
+            <div class="box team-intro">
+                <h1>Meet PIT Crew</h1>
+                <p>
+                    PIT Crew is made up of Luke Flaker, Mia Gallo, and Annaliese Dedmore. Their team name is inspired by the
+                    PIT tags used to identify and track fish during monitoring. The team is continuing the development of
+                    CRAB CAKES for fish monitoring in the Colorado River and Grand Canyon.
+                </p>
+            </div>
 
-            <p class="box team-intro">
-                PIT Crew is made up of Luke Flaker, Mia Gallo, and Annaliese Dedmore. Their team name is inspired by the
-                PIT tags used to identify and track fish during monitoring. The team is continuing the development of
-                CRAB CAKES for fish monitoring in the Colorado River and Grand Canyon.
-            </p>
-
-            <div class="team-details">
-                <div class="box team-card">
-                    <img src="images/team/luke.jpg" alt="Luke Flaker" />
-
-                    <h2>Luke Flaker</h2>
+            <section class="team-details">
+                <div class="memberCard">
+                    <div class="mem1">
+                        <h2>Luke Flaker</h2>
+                    </div>
 
                     <h3>Project Roles</h3>
                     <p>Team Leader, Customer Communicator, Full-Stack Programmer</p>
 
                     <h3>Skills</h3>
-                    <p>MySQL, Database Development, Python, Full-Stack Web development.</p>
+                    <p>
+                        MySQL, Database Development, Python, Full-Stack Web development
+                    </p>
 
                     <h3>About Luke</h3>
                     <p>
-                        Luke is from Boise, Idaho and is pursuing a Bachelors in computer science from Northern Arizona
-                        University with an expected graduation date in the spring of 2027. Luke has experience building
-                        software applications in team settings, developing databases, and developing full-stack web
-                        applications. His favorite parts of CS are object-oriented programming, coding databases, and
-                        debugging. Outside of school, Luke enjoys playing basketball, weightlifting, hiking, camping,
-                        and many more outdoor activities.
+                        Luke is from Boise, Idaho and is pursuing a Bachelors in computer science from Northern Arizona University with an expected
+                        graduation date in the spring of 2027. Luke has experience building software applications in team settings, developing databases,
+                        and developing full-stack web applications. His favorite parts of CS are object-oriented programming, coding databases, and debugging. Outside
+                        of school, Luke enjoys playing basketball, weightlifting, hiking, camping, and many more outdoor activities.
                     </p>
                 </div>
+                <img src="images/team/luke.jpg" alt="Luke Flaker" />
+            </section>
 
-                <div class="box team-card">
-                    <img src="images/team/mia.jpg" alt="Mia Gallo" />
 
-                    <h2>Mia Gallo</h2>
+            <section class="team-details reverse">
+                <div class="memberCard">
+                    <div class="mem2">
+                        <h2>Mia Gallo</h2>
+                    </div>
 
                     <h3>Project Roles</h3>
                     <p>Editor, Architect, Front-End Programmer</p>
@@ -67,28 +75,37 @@
                         outside.
                     </p>
                 </div>
+                <img src="images/team/mia.jpg" alt="Mia Gallo" />
+            </section>
 
-                <div class="box team-card">
-                    <img src="images/team/annaliese.jpg" alt="Annaliese Dedmore" />
 
-                    <h2>Annaliese Dedmore</h2>
+            <section class="team-details">
+                <div class="memberCard">
+                    <div class="mem3">
+                        <h2>Annaliese Dedmore</h2>
+                    </div>
 
                     <h3>Project Roles</h3>
-                    <p>Recorder, Release Manager, Back-End Programmer</p>
+                    <p>
+                        Recorder, Release Manager, Back-End Programmer
+                    </p>
 
                     <h3>Skills</h3>
-                    <p>C, Python, JavaScript, HTML, CSS, JavaScript, MySQL, QA testing .</p>
+                    <p>
+                        C, Python, JavaScript, HTML, CSS, JavaScript, MySQL, QA testing 
+                    </p>
 
                     <h3>About Annaliese</h3>
                     <p>
-                        Annaliese is from Phoenix, Arizona, and is currently an undergraduate at Northern Arizona
-                        University majoring in Computer Science. She has experience with different operating systems,
-                        designing and implementing software, and database management systems. Some of her favorite
-                        subjects within the field include automation, data analyzation and organization, and web design.
-                        However, outside of class she enjoys reading, writing, and illustration; making sure to always
-                        learn and improve on new and interesting things.
+                        Annaliese is from Phoenix, Arizona, and is currently an undergraduate at Northern Arizona University majoring in Computer Science. 
+                        She has experience with different operating systems, designing and implementing software, and database management systems. Some of 
+                        her favorite subjects within the field include automation, data analyzation and organization, and web design. However, outside of 
+                        class she enjoys reading, writing, and illustration; making sure to always learn and improve on new and interesting things.
                     </p>
                 </div>
+                <img src="images/team/annaliese.jpg" alt="Annaliese Dedmore" />
+            </section>
+
             </div>
         </main>
     </body>

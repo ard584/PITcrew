@@ -1,22 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #1e1e2b;
+    background-color: #192b38;    
     color: #2f2f2f;
     line-height: 1.6;
 }
 
 nav {
-    background-color: #303045;
+    background-color: #283d4c;
     display: flex;
     align-items: center;
     padding: 5px;
+    flex-wrap: wrap;
+    gap: 8px;   
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 18px;
+    margin: 0 12px;
 }
 
 nav a:hover,
@@ -72,6 +74,12 @@ h4 {
     color: white;
 }
 
+.topLogo span {
+    font-size: 34px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 .pitHeader {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/coloradoHeader.png");
@@ -85,7 +93,7 @@ h4 {
 
 .pitHeaderInfo {
     max-width: 1400px;
-    color: #beb8c2;
+    color: #e4ebf0;
     text-align: left;
 }
 
@@ -153,14 +161,14 @@ h4 {
 
 .mentor-label {
     display: block;
-    color: #2f2f2f;
+    color: #d8e3ec;
     font-size: 15px;
     font-weight: normal;
 }
 
 .lead-label {
     display: block;
-    color: #2f2f2f;
+    color: #d8e3ec;
     font-size: 15px;
     font-weight: normal;
 }
@@ -204,8 +212,8 @@ h4 {
 }
 
 .project-figure figcaption {
-    font-size: 13px;
-    color: #555555;
+    font-size: 15px;
+    color: #d8e3ec;
 }
 
 .month-heading {
@@ -257,7 +265,7 @@ h4 {
 
 .memberCard p {
     margin: 0 0 18px;
-    color: #d3cedb;
+    color: #dbe5ec;
 }
 
 .month-heading h2,
@@ -266,7 +274,11 @@ h4 {
 }
 
 main a {
-    color: rgb(144, 172, 117);
+    color: #c8e7a4;
+}
+
+main a:hover {
+    color: #e5f5ca;
 }
 
 @media (max-width: 750px) {
@@ -280,4 +292,28 @@ main a {
         display: inline-block;
         margin: 5px 10px;
     }
+}
+
+
+/* Document links */
+.document-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.document-link {
+    display: block;
+    background-color: #304654;
+    padding: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.document-link:hover {
+    background-color: #385669;
+    text-decoration: underline;
 }

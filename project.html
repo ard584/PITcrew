@@ -1,150 +1,107 @@
 <!doctype html>
-<html>
-    <head>
-        <title>PIT Crew | Project</title>
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIT Crew | Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="topLogo">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo"></a>
+        <span>PIT Crew</span>
+    </div>
+    <div class="nav-links">
+        <a href="team.html">Team</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="documents.html">Documents</a>
+    </div>
+</nav>
 
-    <body>
-        <nav>
-            <div class="topLogo">
-                <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo" /></a>
-                <span>PIT Crew</span>
-            </div>
-            <a href="team.html">Team</a>
-            <a href="project.html">Project</a>
-            <a href="development.html">Development</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="documents.html">Documents</a>
-        </nav>
+<main class="page-content">
+    <h1>Project</h1>
+    <h2>Description</h2>
+    <h3>Fish Monitoring in the Grand Canyon</h3>
+    <section class="box">
+        <p>The Arizona Game and Fish Department, U.S. Geological Survey, and U.S. Fish and Wildlife
+        Service conduct and support fish monitoring in the Colorado River and Grand Canyon. Biologists
+        collect information on roughly 150,000–200,000 fish each year, including species, length,
+        weight, and location. Many fish also have PIT tags that allow them to be identified if recaptured.</p>
+        <p>Collected records help researchers track fish populations and understand changes in the river
+        ecosystem. Field crews need dependable software to enter accurate data while working in remote areas.</p>
+    </section>
 
-        <main class="page-content">
-            <h1>Project</h1>
+    <figure class="project-figure">
+        <img src="images/project/field_data_entry.png" alt="Fish monitoring data being entered in the field">
+        <figcaption>Fish monitoring data being entered along the Colorado River.</figcaption>
+    </figure>
 
-            <section>
-                <h2>High-Level Requirements</h2>
+    <h3>The Current Problem</h3>
+    <section class="box">
+        <p>Field crews currently use SHOALS, an older Windows program that has not received regular
+        updates. Biologists rely on it to record fish measurements and PIT-tag information, review
+        previous captures, and manage data collected during field surveys.</p>
+        <p>Because SHOALS is aging, agencies need a dependable replacement that can continue to be
+        maintained and work with newer computers and survey equipment.</p>
+    </section>
 
-                <section class="box">
-                    <p>
-                        CRAB CAKES v2 will improve Bluetooth PIT-tag scanner connectivity, support Windows and Linux,
-                        and provide a more user-friendly interface for field biologists. The application must also
-                        support offline data collection, local backups, and data export.
-                    </p>
+    <figure class="project-figure">
+        <img src="images/project/shoals.png" alt="SHOALS specimen data entry screen">
+        <figcaption>SHOALS, the legacy program used to record fish survey data.</figcaption>
+    </figure>
 
-                    <p>
-                        Additional requirements include PIT-tag history lookup with warnings for unusual measurements or
-                        species mismatches, as well as QA/QC tools for reviewing fish data through graphs, filters,
-                        summaries, and pivot tables. Survey data should be exportable as CSV or tab-delimited files for
-                        use in existing research databases.
-                    </p>
-                </section>
-            </section>
+    <h3>CRAB CAKES v2</h3>
+    <section class="box">
+        <p>CRAB CAKES (Colorado River Area Biologists Computer-Aided Knowledge Entry System) is a desktop
+        application initially developed by the previous NAU Capstone team, SharkBytes. PIT Crew is
+        continuing their work to make the application more reliable and ready for field use.</p>
+        <p>Our focus includes scanner connectivity, PIT-tag history, a clearer interface, QA/QC
+        visualizations, local backups, and support for Windows and Linux.</p>
+    </section>
 
-            <section>
-                <h2>Envisioned Solution</h2>
+    <figure class="project-figure">
+        <img src="images/project/crab_cakes_v1.png" alt="CRAB CAKES v1 specimen entry screen">
+        <figcaption>Specimen-entry screen from CRAB CAKES v1, developed by SharkBytes.</figcaption>
+    </figure>
 
-                <section class="box">
-                    <p>
-                        PIT Crew is building on the existing CRAB CAKES application to create a more reliable
-                        replacement for SHOALS. The goal is to give field biologists a single desktop application where
-                        they can collect, review, and manage fish survey data without needing an internet connection.
-                    </p>
+    <h3>Why It Matters</h3>
+    <section class="box">
+        <p>With so many fish recorded every year, even small data-entry errors can affect research.
+        Field crews need to catch mistakes early, compare current measurements with historical
+        records, and review their data before leaving the field.</p>
+        <p>A reliable, easy-to-use replacement for SHOALS will support efficient fish monitoring
+        and long-term conservation work in the Grand Canyon.</p>
+    </section>
 
-                    <p>
-                        Our current development includes QA/QC prototypes that display fish records from a local SQLite
-                        database through length-versus-weight graphs, species counts, customizable graphs, pivot tables,
-                        and summaries. We are also working toward improved scanner integration, PIT-tag history
-                        features, and compatibility across supported operating systems.
-                    </p>
-                </section>
-            </section>
+    <h2>High-Level Requirements</h2>
+    <section class="box">
+        <p>CRAB CAKES v2 must support offline field data entry and local SQLite storage, improve
+        Bluetooth PIT-tag scanner connectivity, and work on Windows and Linux. It should be easy
+        for field crews to use and protect survey records through local and external-drive backups.</p>
+        <p>Other key requirements include PIT-tag history lookup, warnings when a fish has a
+        shorter length, lower weight, or different species than a previous capture, and the
+        option to verify and override those warnings. The application will also provide
+        QA/QC graphs, filters, summaries, and pivot tables.</p>
+        <p>Users need to export project data in CSV or tab-delimited formats, including separate
+        sample and specimen tables or a combined table. The application is intended to be a
+        standalone program without cloud storage.</p>
+    </section>
 
-            <figure class="project-figure">
-                <img src="images/project/shoals.png" alt="Shoals specimen data entry screen" />
+    <h2>Envisioned Solution</h2>
+    <section class="box">
+        <p>PIT Crew is improving the existing Flutter desktop application instead of building
+        an entirely new system. Biologists will be able to create or open a project, connect
+        a PIT-tag scanner, enter and review specimen data, and keep working without internet
+        access. Local storage and external backups will help protect collected records.</p>
+        <p>Our current QA/QC prototype reads fish records from a local SQLite database and uses
+        them to create length-versus-weight plots, species counts, customizable graphs,
+        pivot tables, and summaries. Work is continuing on scanner reliability, PIT-tag
+        history, Linux compatibility, and other field workflows.</p>
+    </section>
+</main>
 
-                <figcaption>
-                    Shoals, the legacy program currently used to enter specimen data during fish surveys.
-                </figcaption>
-            </figure>
-
-            <h3>CRAB CAKES</h3>
-
-            <section class="box">
-                <p>
-                    CRAB CAKES, or the Colorado River Area Biologists Computer-Aided Knowledge Entry System, is the
-                    desktop application being developed to replace Shoals. Development began with a previous NAU
-                    Capstone team, SharkBytes, which created the first version of the new system and completed several
-                    important parts of the application. However, the program is not yet reliable enough for regular
-                    field use.
-                </p>
-
-                <p>
-                    PIT Crew is continuing that work by focusing on the parts of the program that still need
-                    improvement. These include making Bluetooth connections with PIT-tag scanners more reliable,
-                    improving the interface, and adding access to information about previously tagged fish. The project
-                    also includes adding simple graphs and summaries for QA/QC in the field and expanding compatibility
-                    to Linux so the program can be used on a wider range of computers.
-                </p>
-            </section>
-
-            <figure class="project-figure">
-                <img src="images/project/crab_cakes_v1.png" alt="Previous CRAB CAKES specimen entry screen" />
-
-                <figcaption>
-                    The specimen-entry screen from the previous CRAB CAKES version developed by the SharkBytes Capstone
-                    team.
-                </figcaption>
-            </figure>
-
-            <h3>Why It Matters</h3>
-
-            <section class="box">
-                <p>
-                    Fish monitoring is about more than keeping records. Changes in fish populations can help show what
-                    is happening in the Colorado River and provide information that supports conservation efforts. This
-                    is especially important for species like the humpback chub, which is threatened by habitat changes
-                    and invasive species.
-                </p>
-
-                <p>
-                    With data being collected from roughly 150,000–200,000 fish each year, even small problems with data
-                    entry can add up quickly. CRAB CAKES will help crews catch unusual values, review information about
-                    previously tagged fish, and check their data while they are still in the field. A reliable
-                    replacement for Shoals would make fish survey data easier to collect and review while giving
-                    biologists a system that can continue to be updated as their work and equipment change.
-                </p>
-
-                <p>
-                    The program also needs to be practical for field crews with different levels of technical
-                    experience. Tasks like connecting a scanner, entering fish information, reviewing records, and
-                    backing up data should be easy to use without requiring programming knowledge.
-                </p>
-            </section>
-
-            <section>
-                <h2>High-Level Requirements</h2>
-
-                <section class="box">
-                    <p>
-                        Major requirements for this application includes but is not limited to; fixing bluetooth scanner
-                        connectivity, improving the pre-existing programs GUI, adding support for Linux systems, adding
-                        graphs to visualize fish data and trends, and making the fish records more user-friendly.
-                    </p>
-                </section>
-            </section>
-
-            <section>
-                <h2>Envisioned Solution</h2>
-
-                <section class="box">
-                    <p>
-                        Despite there being a pre-existing application for our clients to use, our goal is to make it
-                        more user-friendly for them as well as ensure its ease of use. As of right now, the biggest
-                        issues arise from the application appearance as well as its lack of response to the bluetooth
-                        pit devices that are necessary on-field. (To be continued as project progresses…)
-                    </p>
-                </section>
-            </section>
-        </main>
-    </body>
+</body>
 </html>

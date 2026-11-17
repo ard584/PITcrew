@@ -1,52 +1,47 @@
 <!doctype html>
-<html>
-    <head>
-        <title>PIT Crew | Development</title>
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIT Crew | Development</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="topLogo">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo"></a>
+        <span>PIT Crew</span>
+    </div>
+    <div class="nav-links">
+        <a href="team.html">Team</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="documents.html">Documents</a>
+    </div>
+</nav>
 
-    <body>
-        <nav>
-            <div class="topLogo">
-                <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo" /></a>
-                <span>PIT Crew</span>
-            </div>
-            <a href="team.html">Team</a>
-            <a href="project.html">Project</a>
-            <a href="development.html">Development</a>
-            <a href="schedule.html">Schedule</a>
-            <a href="documents.html">Documents</a>
-        </nav>
+<main class="page-content">
+    <h1>Development</h1>
+    <section class="box">
+        <h2>Technologies</h2>
+        <p>CRAB CAKES v2 is a desktop application built with <strong>Flutter and Dart</strong>.
+        Our team is extending the original CRAB CAKES codebase rather than replacing it with
+        a separate application.</p>
+        <p>The application uses a local <strong>SQLite</strong> database to store survey records,
+        so biologists can work without an internet connection. We use <strong>fl_chart</strong>,
+        a Flutter charting library, to create QA/QC graphs and summaries directly from saved data.</p>
+        <p>Development also involves Bluetooth PIT-tag scanner communication, testing on
+        Windows and Linux, and improving the field data-entry interface. We use GitHub to
+        collaborate and manage changes to our code.</p>
 
-        <main class="page-content">
-            <h1>Development</h1>
+        <h3>Codebase</h3>
+        <p>
+            <a href="https://github.com/ard584/crab_cakes_v2"
+               target="_blank" rel="noopener noreferrer">CRAB CAKES v2 GitHub Repository</a>
+        </p>
+    </section>
+</main>
 
-            <section class="box">
-                <h2>Technologies</h2>
-
-                <p>
-                    CRAB CAKES v2 is a desktop application developed using Flutter and Dart. Our team is continuing the
-                    work of the previous NAU Capstone team to improve how biologists collect and manage fish survey data
-                    in the field.
-                </p>
-
-                <p>
-                    The application uses a local SQLite database to store fish survey records, allowing biologists to
-                    work without an internet connection. We are also using the Flutter package fl_chart to create graphs
-                    and summaries for QA/QC.
-                </p>
-
-                <p>
-                    Our development focuses on improving Bluetooth PIT-tag scanner connectivity, expanding compatibility
-                    to Windows and Linux, and making the application easier to use during field surveys.
-                </p>
-
-                <h3>Codebase</h3>
-
-                <p>We use GitHub to manage our source code and collaborate throughout development.</p>
-
-                <a href="https://github.com/ard584/crab_cakes_v2" target="_blank"> CRAB CAKES v2 GitHub Repository </a>
-            </section>
-        </main>
-    </body>
+</body>
 </html>

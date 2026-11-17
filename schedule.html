@@ -1,184 +1,105 @@
 <!doctype html>
-<html>
-    <head>
-        <title>PIT Crew | Development</title>
-        <link rel="stylesheet" href="css/style.css" /></head
-    ><!doctype html>
-    <html>
-        <head>
-            <title>PIT Crew | Schedule</title>
-            <link rel="stylesheet" href="css/style.css" />
-        </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIT Crew | Schedule</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="schedule-page">
+<nav>
+    <div class="topLogo">
+        <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo"></a>
+        <span>PIT Crew</span>
+    </div>
+    <div class="nav-links">
+        <a href="team.html">Team</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="documents.html">Documents</a>
+    </div>
+</nav>
 
-        <body class="schedule-page">
-            <nav>
-                <div class="topLogo">
-                    <a class="logo" href="index.html"><img src="images/logo.png" alt="PIT Crew Logo" /></a>
-                    <span>PIT Crew</span>
-                </div>
+<main class="page-content">
+    <h1>Development Schedule</h1>
+    <p class="schedule-intro">Major stages and milestones for CRAB CAKES v2 throughout Fall 2026.</p>
+    <section class="box current-status">
+        <h2>Current Focus</h2>
+        <p>PIT Crew is preparing for the November Design Review and refining prototypes.
+        Recent work includes QA/QC graphs, filters, pivot tables, and summaries generated
+        from locally stored fish survey data. We are also continuing work on scanner
+        connectivity and reviewing requirements with our sponsors.</p>
+    </section>
 
-                <a href="team.html">Team</a>
-                <a href="project.html">Project</a>
-                <a href="development.html">Development</a>
-                <a class="active" href="schedule.html">Schedule</a>
-                <a href="documents.html">Documents</a>
-            </nav>
+    <div class="schedule-timeline">
+        <section class="box schedule-month">
+            <div class="month-heading"><h2>September</h2><h3>Project Familiarization</h3></div>
+            <p>Meet with sponsors, learn about field survey workflows, and review SHOALS and
+            CRAB CAKES v1.</p>
+            <h4>Milestones &amp; Deliverables</h4>
+            <ul>
+                <li><a href="documents/Team%20Inventory.pdf" target="_blank">Team Inventory</a></li>
+                <li><a href="documents/Mini%20Presentation.pdf" target="_blank">Mini Presentation</a></li>
+                <li><a href="documents/Team%20Standards.pdf" target="_blank">Team Standards</a></li>
+            </ul>
+        </section>
 
-            <main class="page-content">
-                <h1>Development Schedule</h1>
+        <section class="box schedule-month">
+            <div class="month-heading"><h2>October</h2><h3>Technical Feasibility</h3></div>
+            <p>Research Linux support, Bluetooth connectivity, GUI improvements,
+            QA/QC tools, and the feasibility of the existing application.</p>
+            <h4>Milestones &amp; Deliverables</h4>
+            <ul>
+                <li><a href="documents/Technical%20Feasibility%20Document.pdf" target="_blank">
+                    Technical Feasibility Document</a></li>
+            </ul>
+        </section>
 
-                <p class="schedule-intro">
-                    This schedule shows the major stages of CRAB CAKES development and project milestones throughout
-                    Fall 2026.
-                </p>
+        <section class="box schedule-month">
+            <div class="month-heading"><h2>November</h2><h3>Prototype Development</h3></div>
+            <p>Refine QA/QC visualizations and database integration, review requirements
+            with sponsors, and prepare for the Design Review.</p>
+            <h4>Milestones &amp; Deliverables</h4>
+            <ul>
+                <li>SICCS Engineering Fest Design Review, November 20</li>
+                <li><a href="documents/CRAB%20CAKES%20v2%20Poster%20FINAL.pdf" target="_blank">
+                    Engineering Fest Poster</a></li>
+                <li>Requirements Document (link to be added)</li>
+                <li>Design Review Presentation (link to be added)</li>
+            </ul>
+        </section>
 
-                <div class="box current-status">
-                    <h2>Current Focus</h2>
+        <section class="box schedule-month">
+            <div class="month-heading"><h2>December</h2><h3>Technical Demonstration</h3></div>
+            <p>Continue developing and testing the prototype, demonstrate technical
+            progress, and prepare for the next stage of development.</p>
+            <h4>Milestones &amp; Deliverables</h4>
+            <ul>
+                <li>Technical Demo</li>
+                <li>Marketing Video</li>
+                <li>Fish Cooperators Meeting</li>
+            </ul>
+        </section>
+    </div>
 
-                    <p>
-                        PIT Crew is currently preparing for the November Design Review while developing and refining
-                        prototypes for CRAB CAKES v2. Our recent work has focused on QA/QC features, including graphs,
-                        filters, pivot tables, and summaries generated from locally stored fish survey data. We are also
-                        continuing work on Bluetooth scanner connectivity and reviewing project requirements with our
-                        sponsors.
-                    </p>
-                </div>
+    <section class="box">
+        <h2>Resources</h2>
+        <p>PIT Crew is building on the original CRAB CAKES application created by
+        SharkBytes, the previous NAU Capstone team. Their website and codebase
+        provide important background for this project.</p>
+        <ul>
+            <li><a href="https://sce.nau.edu/capstone/projects/CS/2026/SharkBytes_F25/"
+                   target="_blank">SharkBytes Project Website (CRAB CAKES v1)</a></li>
+            <li><a href="https://github.com/ak2466/crab_cakes"
+                   target="_blank">CRAB CAKES v1 GitHub Repository</a></li>
+            <li><a href="documents/Crab%20Cakes%20Project%20Description.pdf"
+                   target="_blank">Original Sponsor Project Description</a></li>
+        </ul>
+        <p>Our sponsors also provide access to SHOALS, PIT-tag scanners, and test tags.
+        Sponsor meetings help guide requirements and ensure the program fits field workflows.</p>
+    </section>
+</main>
 
-                <div class="schedule-timeline">
-                    <div class="box schedule-month">
-                        <div class="month-heading">
-                            <h2>September</h2>
-                            <h3>Project Familiarization</h3>
-                        </div>
-
-                        <p>
-                            Meet with sponsors to learn how the project will be used in the field and understand their
-                            expectations for the system. Review and become familiar with Shoals and the previous CRAB
-                            CAKES version.
-                        </p>
-
-                        <h4>Milestones & Deliverables</h4>
-
-                        <ul>
-                            <li>SICCS Engineering Fest Design Review, November 20</li>
-
-                            <li>
-                                <a href="documents/CRAB%20CAKES%20v2%20Poster%20FINAL.pdf" target="_blank">
-                                    Engineering Fest Poster
-                                </a>
-                            </li>
-
-                            <li>Requirements Document</li>
-                        </ul>
-                    </div>
-
-                    <div class="box schedule-month">
-                        <div class="month-heading">
-                            <h2>October</h2>
-                            <h3>Technical Feasibility</h3>
-                        </div>
-
-                        <p>
-                            Investigate the existing codebase, Bluetooth scanner connectivity, Linux support, GUI
-                            improvements, and other technical options. Begin working with PIT-tag hardware when it
-                            becomes available.
-                        </p>
-
-                        <h4>Milestones & Deliverables</h4>
-
-                        <ul>
-                            <li>
-                                <a href="documents/Technical%20Feasibility%20Document.pdf" target="_blank">
-                                    Technical Feasibility Document
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="box schedule-month">
-                        <div class="month-heading">
-                            <h2>November</h2>
-                            <h3>Prototype Development</h3>
-                        </div>
-
-                        <p>
-                            Develop and refine prototypes for CRAB CAKES v2, with a focus on QA/QC visualization,
-                            database integration, and improved field workflows. Review requirements with sponsors and
-                            prepare the prototypes, documentation, and presentation for the November Design Review.
-                        </p>
-
-                        <h4>Milestones & Deliverables</h4>
-
-                        <ul>
-                            <li>SICCS Engineering Fest Design Review, November 20</li>
-
-                            <li>
-                                <a href="documents/CRAB%20CAKES%20v2%20Poster%20FINAL.pdf" target="_blank">
-                                    Engineering Fest Poster
-                                </a>
-                            </li>
-
-                            <li>Requirements Document</li>
-                        </ul>
-                    </div>
-
-                    <div class="box schedule-month">
-                        <div class="month-heading">
-                            <h2>December</h2>
-                            <h3>Technical Demonstration</h3>
-                        </div>
-
-                        <p>
-                            Continue developing and testing the prototype and demonstrate the team's technical progress.
-                            Finalize project requirements and prepare the project for the next stage of development.
-                        </p>
-
-                        <h4>Milestones & Deliverables</h4>
-
-                        <ul>
-                            <li>Technical Demo</li>
-                            <li>Marketing Video</li>
-                            <li>Fish Cooperators Meeting</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <section class="box">
-                    <h2>Resources</h2>
-
-                    <p>
-                        PIT Crew is continuing development of CRAB CAKES, originally created by the previous NAU
-                        Capstone team, SharkBytes. Their project website and source code provide a starting point for
-                        our work.
-                    </p>
-
-                    <ul>
-                        <li>
-                            <a href="https://sce.nau.edu/capstone/projects/CS/2026/SharkBytes_F25/" target="_blank">
-                                SharkBytes Project Website (CRAB CAKES v1)
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://github.com/ak2466/crab_cakes" target="_blank">
-                                CRAB CAKES v1 GitHub Repository
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="documents/Crab%20Cakes%20Project%20Description.pdf" target="_blank">
-                                Original Sponsor Project Description
-                            </a>
-                        </li>
-                    </ul>
-
-                    <p>
-                        Our sponsors also provide access to the SHOALS application, PIT-tag scanners, and test tags for
-                        development and testing. Sponsor meetings help guide our requirements and ensure the application
-                        meets the needs of field biologists.
-                    </p>
-                </section>
-            </main>
-        </body>
-    </html>
+</body>
 </html>

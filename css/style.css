@@ -1,8 +1,11 @@
+/* General site colors and layout */
+* { box-sizing: border-box; }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #192b38;    
-    color: #2f2f2f;
+    background-color: #192b38;
+    color: #f5f7f9;
     line-height: 1.6;
 }
 
@@ -10,68 +13,23 @@ nav {
     background-color: #283d4c;
     display: flex;
     align-items: center;
-    padding: 5px;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 8px;   
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-}
-
-nav a:hover,
-nav a.active {
-    text-decoration: underline;
-}
-
-nav a.active {
-    font-weight: bold;
-}
-
-.page-content {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 25px;
-    color: white;
-}
-
-.team-page .page-content {
-    max-width: 1200px;
-}
-
-h1,
-h2 {
-    text-align: center;
-    color: white;
-}
-
-h1 {
-    font-size: 48px;
-    margin-top: 0;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-h3,
-h4 {
-    color: #dae0e8;
-}
-
-.topLogo img {
-    height: 100px;
+    padding: 8px 20px;
+    gap: 12px 24px;
 }
 
 .topLogo {
-    text-align: left;
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: auto;
     color: white;
+}
+
+.topLogo img {
+    height: 85px;
+    width: auto;
+    display: block;
 }
 
 .topLogo span {
@@ -80,33 +38,106 @@ h4 {
     white-space: nowrap;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+}
+
+.nav-links a,
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover,
+.nav-links a.active,
+nav > a:hover,
+nav > a.active {
+    text-decoration: underline;
+}
+
+.nav-links a.active,
+nav > a.active {
+    font-weight: bold;
+}
+
+.page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3, h4 {
+    color: #dae0e8;
+}
+
+.box {
+    background-color: #45545e;
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+}
+
+.box h2:first-child {
+    margin-top: 0;
+}
+
+main a {
+    color: #c8e7a4;
+}
+
+main a:hover {
+    color: #e5f5ca;
+}
+
+/* Homepage */
 .pitHeader {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/coloradoHeader.png");
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../images/coloradoHeader.png");
     background-size: cover;
     background-position: center;
+    min-height: 85vh;
     display: flex;
-    min-height: 90vh;
     align-items: center;
-    padding: 0 60px;
+    padding: 75px max(35px, calc((100vw - 1200px) / 2));
 }
 
 .pitHeaderInfo {
-    max-width: 1400px;
     color: #e4ebf0;
-    text-align: left;
+    width: 100%;
+    max-width: 950px;
 }
 
 .pitHeaderInfo h1 {
-    text-align: left;
     color: #edebeb;
-    font-size: 150px;
-    line-height: 110px;
-    margin-bottom: 10px;
+    font-size: clamp(42px, 8vw, 115px);
+    line-height: 1;
+    text-align: left;
+    overflow-wrap: normal;
+    margin: 0 0 24px;
 }
 
 .pitHeaderInfo p {
-    text-align: left;
     max-width: 850px;
     font-size: 20px;
 }
@@ -115,42 +146,26 @@ h4 {
     position: absolute;
     bottom: 10px;
     right: 15px;
-    margin: 10px;
     font-size: 12px;
-    color: #969199;
+    color: #d1d5da;
 }
 
-.box {
-    background-color: #45545e;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 35px;
-}
-
-.main-logo {
-    display: block;
-    width: 230px;
-    margin: 0 auto 30px;
-}
-
-.team,
-.sponsors {
+.team, .sponsors {
     display: flex;
     gap: 30px;
 }
 
-.team-member,
-.sponsor,
-.team-card {
+.team-member, .sponsor, .team-card {
     flex: 1;
+    min-width: 0;
     text-align: center;
 }
 
 .photo-frame {
     height: 220px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .photo-frame img {
@@ -159,14 +174,7 @@ h4 {
     border-radius: 10px;
 }
 
-.mentor-label {
-    display: block;
-    color: #d8e3ec;
-    font-size: 15px;
-    font-weight: normal;
-}
-
-.lead-label {
+.mentor-label, .lead-label {
     display: block;
     color: #d8e3ec;
     font-size: 15px;
@@ -174,19 +182,20 @@ h4 {
 }
 
 .sponsor img {
+    max-width: 100%;
     width: 250px;
     height: 220px;
     object-fit: contain;
 }
 
-.team-intro,
-.schedule-intro {
+/* Team page */
+.team-intro, .schedule-intro {
     text-align: center;
     margin: 0 auto 35px;
 }
 
 .team-intro h1 {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .team-intro p {
@@ -194,40 +203,11 @@ h4 {
     color: white;
 }
 
-.team-card img {
-    width: 120px;
-    height: 145px;
-    object-fit: contain;
-}
-
-.project-figure {
-    max-width: 500px;
-    margin: 25px auto;
-    text-align: center;
-}
-
-.project-figure img {
-    max-width: 100%;
-    max-height: 320px;
-}
-
-.project-figure figcaption {
-    font-size: 15px;
-    color: #d8e3ec;
-}
-
-.month-heading {
-    display: flex;
-    gap: 18px;
-    align-items: baseline;
-    border-bottom: 2px solid #c3ad78;
-}
-
 .team-details {
     display: flex;
     align-items: center;
     gap: 60px;
-    padding: 80px 10%;
+    padding: 60px 7%;
 }
 
 .team-details:nth-of-type(even) {
@@ -256,7 +236,6 @@ h4 {
 }
 
 .memberCard h3 {
-    text-align: left;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -268,52 +247,129 @@ h4 {
     color: #dbe5ec;
 }
 
+/* Project page */
+.project-figure {
+    max-width: 500px;
+    margin: 25px auto 40px;
+    text-align: center;
+}
+
+.project-figure img {
+    max-width: 100%;
+    max-height: 320px;
+}
+
+.project-figure figcaption {
+    font-size: 15px;
+    color: #d8e3ec;
+}
+
+/* Roadmap */
+.month-heading {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    border-bottom: 2px solid #c3ad78;
+}
+
 .month-heading h2,
 .month-heading h3 {
     margin: 0;
 }
 
-main a {
-    color: #c8e7a4;
+.schedule-month h4 {
+    margin-bottom: 8px;
 }
 
-main a:hover {
-    color: #e5f5ca;
-}
-
-@media (max-width: 750px) {
-    .team,
-    .sponsors,
-    .month-heading {
-        display: block;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px 10px;
-    }
-}
-
-
-/* Document links */
+/* Equal-size document tiles */
 .document-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: 15px;
     margin-top: 20px;
 }
 
 .document-link {
-    display: block;
-    background-color: #304654;
-    padding: 18px;
+    min-height: 65px;
+    padding: 12px;
     border-radius: 8px;
-    text-decoration: none;
+    background-color: #304654;
+    color: #c8e7a4;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
 }
 
 .document-link:hover {
     background-color: #385669;
+    color: #e5f5ca;
     text-decoration: underline;
+}
+
+/* Phones and small screens */
+@media (max-width: 750px) {
+    nav {
+        justify-content: center;
+        padding: 12px 14px;
+    }
+
+    .topLogo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .topLogo img { height: 70px; }
+    .topLogo span { font-size: 26px; }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    .nav-links a, nav > a { font-size: 14px; }
+
+    .page-content {
+        padding: 28px 16px;
+    }
+
+    h1 { font-size: 36px; }
+    h2 { font-size: 26px; }
+    .box { padding: 20px; }
+
+    .pitHeader {
+        min-height: 65vh;
+        padding: 70px 22px;
+    }
+
+    .pitHeaderInfo h1 {
+        font-size: clamp(38px, 11vw, 65px);
+        line-height: 1.05;
+    }
+
+    .pitHeaderInfo p { font-size: 16px; }
+    .team, .sponsors { flex-direction: column; }
+
+    .team-details,
+    .team-details:nth-of-type(even) {
+        flex-direction: column;
+        gap: 25px;
+        padding: 28px 12px;
+    }
+
+    .team-details img {
+        max-width: 100%;
+        height: auto;
+        max-height: 420px;
+    }
+
+    .team-intro h1 { font-size: 40px; }
+    .month-heading { display: block; }
+}
+
+@media (max-width: 380px) {
+    .nav-links { gap: 8px 12px; }
+    .nav-links a, nav > a { font-size: 13px; }
+    .pitHeaderInfo h1 { font-size: 37px; }
 }

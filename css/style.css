@@ -282,15 +282,20 @@ main a:hover {
     margin-bottom: 8px;
 }
 
-/* Equal-size document tiles */
 .document-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     margin-top: 20px;
 }
 
 .document-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 250px;
+    max-width: 350px;
     min-height: 65px;
     padding: 12px;
     border-radius: 8px;
